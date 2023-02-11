@@ -6,6 +6,7 @@ import {Page1} from '../pages/page-1';
 import {Page2} from '../pages/page-2';
 import {Page3} from '../pages/page-3';
 import {Page4} from '../pages/page-4';
+import {Page21} from '../pages/page-2-1';
 
 // NOTE: if using fullpage extensions/plugins put them here and pass it as props.
 
@@ -61,6 +62,7 @@ const SlidesComponent = (): JSX.Element => {
           <ReactFullpage.Wrapper>
             <Page1 />
             <Page2 />
+            <Page21 />
             <Page3 />
             <Page4 />
           </ReactFullpage.Wrapper>
