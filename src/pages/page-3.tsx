@@ -30,13 +30,13 @@ const SubContent = styled.div`
 `;
 
 const SideTextContainer = styled.div`
-  background-color: white;
+  // background-color: white;
+  display: flex;
   width: 500px;
-  height: 352px;
+  height: 570px;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  display: flex;
   flex-direction: column;
 `;
 
@@ -44,18 +44,18 @@ const NormalText = styled.h4`
   width: 500px;
   font-size: 2rem;
   font-family: Verdana;
-  color: gray;
+  color: black;
   font-family: 'OswaldRegular';
-  padding: 0;
   margin: 0;
+  padding: 0;
 `;
 
 const TitleText = styled.h1`
   width: 500px;
   font-size: 3rem;
   font-family: 'OswaldBold';
-  padding: 0;
   margin: 0;
+  padding: 0;
 `;
 
 const Logo = styled.div`
@@ -78,19 +78,17 @@ const SubTitleText = styled.h3`
   margin: 0;
 `;
 
-const Page1Component = (): JSX.Element => {
+const Page3Component = (): JSX.Element => {
   return (
     <Container className={SEL}>
       <Content>
         <Logo />
         <SubContent>
-          <video width="640" height="352" controls>
-            <source src="videos/sevilla.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          <img src="img/familia.png" width={538} height={578} />
           <SideTextContainer>
-            <TitleText>60 Plus - Sevilla</TitleText>
-            <NormalText>Del 23 al 26 de Marzo</NormalText>
+            <TitleText>Programa para la familia</TitleText>
+            <NormalText>Sábado 25 de Febrero</NormalText>
+            <NormalText>17:00 horas</NormalText>
           </SideTextContainer>
         </SubContent>
         <SubTitleText>Fuengirola</SubTitleText>
@@ -99,4 +97,4 @@ const Page1Component = (): JSX.Element => {
   );
 };
 
-export const Page1 = memo(Page1Component);
+export const Page3 = memo(Page3Component);
