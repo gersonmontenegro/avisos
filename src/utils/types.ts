@@ -5,3 +5,5 @@ export enum Keys {
   ArrowLeft = 'ArrowLeft',
   ArrowRight = 'ArrowRight',
 }
+
+export declare type TestableProps<T> = T & {testID: string};
