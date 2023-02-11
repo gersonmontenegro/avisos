@@ -3,6 +3,7 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import {get, isNull, isUndefined} from 'lodash';
 import {palette20230211, Keys, SECTION_SEL} from '../utils';
 import {Page1} from '../pages/page-1';
+import {Page2} from '../pages/page-2';
 
 // NOTE: if using fullpage extensions/plugins put them here and pass it as props.
 
@@ -56,7 +57,8 @@ const SlidesComponent = (): JSX.Element => {
         ref={pageRef}
         render={() => (
           <ReactFullpage.Wrapper>
-            <Page1 title="60 Plus - Sevilla" key="p1" testID="p1" />
+            <Page1 />
+            <Page2 />
           </ReactFullpage.Wrapper>
         )}
       />

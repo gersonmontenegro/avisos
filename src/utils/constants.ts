@@ -1,5 +1,5 @@
 // 0fa2d0
-export const palette20230211 = ['#ffffff', '#d56aa0', '#FEFAE0', '#FAEDCD', '#D4A373'];
+export const palette20230211 = ['#cdcdcd', '#d56aa0', '#FEFAE0', '#FAEDCD', '#D4A373'];
 export const primaryPalette = ['#CCD5AE', '#E9EDC9', '#FEFAE0', '#FAEDCD', '#D4A373'];
 export const secondaryPalette = [
   '#FEC5BB',

@@ -2,6 +2,7 @@ import React, {memo} from 'react';
 import {SEL} from '../utils';
 import styled from 'styled-components';
 import LogoIASD from '../assets/img/iasd3.png';
+// import CenaParejas from '../assets/img/cena.png';
 import './page.css';
 
 // type PageProps = TestableProps<{
@@ -30,13 +31,13 @@ const SubContent = styled.div`
 `;
 
 const SideTextContainer = styled.div`
-  background-color: white;
+  // background-color: white;
+  display: flex;
   width: 500px;
-  height: 352px;
+  height: 570px;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  display: flex;
   flex-direction: column;
 `;
 
@@ -44,14 +45,18 @@ const NormalText = styled.h4`
   width: 500px;
   font-size: 2rem;
   font-family: Verdana;
-  color: gray;
+  color: black;
   font-family: 'OswaldRegular';
+  margin: 0;
+  padding: 0;
 `;
 
 const TitleText = styled.h1`
   width: 500px;
   font-size: 3rem;
   font-family: 'OswaldBold';
+  margin: 0;
+  padding: 0;
 `;
 
 const Logo = styled.div`
@@ -65,6 +70,17 @@ const Logo = styled.div`
   text-align: center;
 `;
 
+// const Cena = styled.div`
+//   width: 472;
+//   height: 570px;
+//   background-image: url(${CenaParejas});
+//   background-size: 100% 100%;
+//   justify-content: center;
+//   align-items: center;
+//   display: flex;
+//   text-align: center;
+// `;
+
 const SubTitleText = styled.h3`
   width: 500px;
   font-family: OswaldRegular;
@@ -74,19 +90,16 @@ const SubTitleText = styled.h3`
   margin: 0;
 `;
 
-const Page1Component = (): JSX.Element => {
+const Page2Component = (): JSX.Element => {
   return (
     <Container className={SEL}>
       <Content>
         <Logo />
         <SubContent>
-          <video width="640" height="352" controls>
-            <source src="videos/sevilla.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          <img src="img/cena.png" width={472} height={570} />
           <SideTextContainer>
-            <TitleText>60 Plus - Sevilla</TitleText>
-            <NormalText>Del 23 al 26 de Marzo</NormalText>
+            <TitleText>Cena de parejas</TitleText>
+            <NormalText>18 de Marzo</NormalText>
           </SideTextContainer>
         </SubContent>
         <SubTitleText>Fuengirola</SubTitleText>
@@ -95,4 +108,4 @@ const Page1Component = (): JSX.Element => {
   );
 };
 
-export const Page1 = memo(Page1Component);
+export const Page2 = memo(Page2Component);
