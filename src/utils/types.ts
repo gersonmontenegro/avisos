@@ -7,3 +7,7 @@ export enum Keys {
 }
 
 export declare type TestableProps<T> = T & {testID: string};
+
+export type PageProps = TestableProps<{
+  title: string;
+}>;

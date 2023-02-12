@@ -19,12 +19,13 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    // "baseUrl": "./",
-    // "paths": {
-    //   "@components/*": ["src/components/*"],
-    //   "@utils/*": ["src/utils/*"],
-    //   "@types/*": ["src/types/*"],
-    // }
+    "baseUrl": "./src",
+    "paths": {
+      "@fonts/*": ["src/assets/fonts/*"],
+      "@assets/*": ["src/assets/*"],
+      "@page-css/*": ["src/pages/css/*"],
+      "@utils/*": ["src/utils/*"],
+    }
   },
   "include": [
     "src"

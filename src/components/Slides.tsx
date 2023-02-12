@@ -2,11 +2,11 @@ import React, {memo, useRef, useState, type KeyboardEvent} from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
 import {get, isNull, isUndefined} from 'lodash';
 import {palette20230211, Keys, SECTION_SEL} from '../utils';
-import {Page1} from '../pages/page-1';
-import {Page2} from '../pages/page-2';
-import {Page3} from '../pages/page-3';
-import {Page4} from '../pages/page-4';
-import {Page21} from '../pages/page-2-1';
+import {Page1} from '../pages/20230211/page-1';
+import {Page2} from '../pages/20230211/page-2';
+import {Page3} from '../pages/20230211/page-3';
+import {Page4} from '../pages/20230211/page-4';
+import {Page21} from '../pages/20230211/page-2-1';
 
 // NOTE: if using fullpage extensions/plugins put them here and pass it as props.
 
