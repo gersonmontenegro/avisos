@@ -5,6 +5,15 @@ export enum Keys {
   ArrowLeft = 'ArrowLeft',
   ArrowRight = 'ArrowRight',
 }
+export interface Colors {
+  pink: string;
+  white: string;
+  black: string;
+  lightgreen: string;
+  lightgray: string;
+  lightblue: string;
+  lightred: string;
+}
 
 export declare type TestableProps<T> = T & {testID: string};
 

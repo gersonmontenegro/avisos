@@ -1,5 +1,8 @@
+import {type Colors} from './types';
+
 // 0fa2d0
 export const palette20230211 = ['#cdcdcd', '#d56aa0', '#FEFAE0', '#FAEDCD', '#D4A373'];
+export const palette20230218 = ['#FEFAE0', '#cdcdcd', '#FEFAE0', '#FAEDCD', '#D4A373'];
 export const primaryPalette = ['#CCD5AE', '#E9EDC9', '#FEFAE0', '#FAEDCD', '#D4A373'];
 export const secondaryPalette = [
   '#FEC5BB',
@@ -12,6 +15,16 @@ export const secondaryPalette = [
   '#FFE5D9',
   '#FEC89A',
 ];
+
+export const colors: Colors = {
+  pink: '#DDA2E3',
+  white: '#FFFFFF',
+  lightgreen: '#7cda93',
+  black: '#000000',
+  lightgray: 'lightgray',
+  lightblue: '#9edae9',
+  lightred: '#f66473',
+};
 
 export const SEL = 'custom-section';
 export const SECTION_SEL = `.${SEL}`;

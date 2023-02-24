@@ -1,8 +1,16 @@
 import styled from 'styled-components';
+import {colors} from 'utils';
 
 export const Logo = styled.img`
-  width: 160px;
-  height: 150px;
+  width: 30%;
+`;
+
+export const Image = styled.img.attrs((props) => ({
+  src: props.src,
+  width: props.width,
+  height: props.height,
+}))`
+  display: flex;
 `;
 
 export const Container = styled.div`
@@ -24,12 +32,14 @@ export const SubContent = styled.div`
   display: flex;
   text-align: center;
   justify-content: center;
+  background-color: ${(props) => props.theme.pageBackground ?? colors.white};
+  border: 10px solid ${colors.lightgray};
 `;
 
 export const SideTextContainer = styled.div`
   background-color: transparent;
   width: 500px;
-  height: 352px;
+  height: 600px;
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -41,10 +51,10 @@ export const NormalText = styled.h4`
   width: 500px;
   font-size: 2rem;
   font-family: Verdana;
-  color: gray;
   font-family: 'OswaldRegular';
   padding: 0;
   margin: 0;
+  color: ${(props) => props.theme.color ?? 'black'};
 `;
 
 export const TitleText = styled.h1`
@@ -53,15 +63,15 @@ export const TitleText = styled.h1`
   font-family: 'OswaldBold';
   padding: 0;
   margin: 0;
+  color: ${(props) => props.theme.color ?? 'black'};
 `;
 
 export const SubTitleText = styled.h3`
-  width: 500px;
   font-family: OswaldRegular;
   font-weight: 300;
   font-size: 3rem;
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
 `;
 
 export const NameText = styled.h3`
@@ -72,4 +82,12 @@ export const NameText = styled.h3`
   font-family: 'OswaldBold';
   margin: 0;
   padding: 0;
+`;
+
+export const FrameContainer = styled.div`
+  background-color: ${colors.white};
+  border: 6px solid #a46400;
+  border-radius: 5px;
+  margin: 10px;
+  width: 90%;
 `;
