@@ -1,13 +1,13 @@
-import React, {memo, useRef, useState, type KeyboardEvent} from 'react';
+import React, {memo, useEffect, useRef, useState, type KeyboardEvent} from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
 import {get, isNull, isUndefined} from 'lodash';
 import {palette20230218, Keys, SECTION_SEL} from '../utils';
-import {Page1, Page2, Page3} from 'pages/20230218';
-import {Page4} from 'pages/20230218/page-4';
+import {Page1, Page2, Page3, Page4} from 'pages/20230225';
 
 // NOTE: if using fullpage extensions/plugins put them here and pass it as props.
 
 const SlidesComponent = (): JSX.Element => {
+  const [isFullscreen, setIsFullscreen] = useState<boolean>(false);
   const pageRef = useRef(null);
   const [sectionsColor] = useState([...palette20230218]);
 
@@ -43,6 +43,20 @@ const SlidesComponent = (): JSX.Element => {
     }
   };
 
+  useEffect(() => {
+    const onFullscreenChange = (): void => {
+      console.log('isFullscreen:', isFullscreen);
+
+      setIsFullscreen(Boolean(document.fullscreenElement));
+    };
+
+    document.addEventListener('fullscreenchange', onFullscreenChange);
+
+    return () => {
+      document.removeEventListener('fullscreenchange', onFullscreenChange);
+    };
+  }, []);
+
   return (
     <div className="App" onKeyDown={onPressKeyboard}>
       <ReactFullpage
@@ -50,7 +64,7 @@ const SlidesComponent = (): JSX.Element => {
         // fullpage options
         licenseKey={'YOUR_KEY_HERE'} // Get one from https://alvarotrigo.com/fullPage/pricing/
         navigation
-        anchors={['firstPage', 'secondPage', 'thirdPage']}
+        anchors={['firstPage', 'secondPage', 'thirdPage', 'fourthPage']}
         sectionSelector={SECTION_SEL}
         onLeave={onLeave}
         sectionsColor={sectionsColor}

@@ -6,5 +6,7 @@ import LogoNuevo from './logo-nuevo.png';
 import WomenDay from './womenday.png';
 import FelizSabado from './feliz-sabado.png';
 import Zoom from './zoom.png';
+import YellowLogo from './yellow-logo.png';
+import ReuClub from './reu-club.jpeg';
 
-export {Familia, Cena, IASD3, LogoNuevo, WomenDay, FelizSabado, CenaHoy, Zoom};
+export {Familia, Cena, IASD3, LogoNuevo, WomenDay, FelizSabado, CenaHoy, Zoom, YellowLogo, ReuClub};
