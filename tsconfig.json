@@ -24,6 +24,7 @@
       "@fonts/*": ["src/assets/fonts/*"],
       "@assets/*": ["src/assets/*"],
       "@page-css/*": ["src/pages/css/*"],
+      "@shared/*": ["src/components/shared/*"],
       "@utils/*": ["src/utils/*"],
     }
   },

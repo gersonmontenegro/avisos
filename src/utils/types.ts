@@ -13,6 +13,7 @@ export interface Colors {
   lightgray: string;
   lightblue: string;
   lightred: string;
+  blue: string;
 }
 
 export declare type TestableProps<T> = T & {testID: string};

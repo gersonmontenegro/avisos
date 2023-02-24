@@ -24,6 +24,7 @@ export const colors: Colors = {
   lightgray: 'lightgray',
   lightblue: '#9edae9',
   lightred: '#f66473',
+  blue: '#0000ff',
 };
 
 export const SEL = 'custom-section';

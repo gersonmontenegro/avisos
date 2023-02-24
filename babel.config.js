@@ -7,6 +7,7 @@ module.exports = {
           '@assets': './src/assets',
           '@page-css/*': './src/pages/css/*',
           '@utils/*': './src/utils/*',
+          '@shared/*': './src/components/shared/*',
         }
       }
     ]

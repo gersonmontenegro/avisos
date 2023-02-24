@@ -91,3 +91,20 @@ export const FrameContainer = styled.div`
   margin: 10px;
   width: 90%;
 `;
+
+export const TodayContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: ${colors.white};
+  font-weight: bold;
+  font-size: 5rem;
+  font-family: 'OswaldBold';
+  font-color: ${colors.blue};
+  transform: rotate(-30deg);
+  margin-bottom: 2rem;
+`;
