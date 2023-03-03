@@ -9,6 +9,7 @@ import {
   FrameContainer,
   Logo,
   NormalText,
+  NormalTextBold,
   SideTextContainer,
   SubContent,
   SubTitleText,
@@ -35,6 +36,7 @@ const Page1Component = (): JSX.Element => {
     return (
       <SideTextContainer className={styles['.white-background']}>
         <NormalText>Semana de Oración</NormalText>
+        <NormalTextBold>Grupo Iglesia Hogar</NormalTextBold>
         <TitleText>Del 12 al 18 de Marzo</TitleText>
         <FrameContainer>
           <SubTitleText>20:00 horas</SubTitleText>

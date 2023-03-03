@@ -27,7 +27,7 @@ const Page5Component = (): JSX.Element => {
   const sideA = useMemo(() => {
     return (
       <SideTextContainer className={styles['.white-background']}>
-        <NormalText>Domingo 12 de Marzo</NormalText>
+        <NormalText>Sábado 11 de Marzo</NormalText>
         <TitleText>Programa JA</TitleText>
         <FrameContainer>
           <SubTitleText>17:30 horas</SubTitleText>

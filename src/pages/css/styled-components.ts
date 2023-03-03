@@ -52,6 +52,17 @@ export const NormalText = styled.h4`
   font-size: 2rem;
   font-family: Verdana;
   font-family: 'OswaldRegular';
+  font-weight: ${(props) => props.itemType ?? 'normal'};
+  padding: 0;
+  margin: 0;
+  color: ${(props) => props.theme.color ?? 'black'};
+`;
+
+export const NormalTextBold = styled.h4`
+  width: 500px;
+  font-size: 2.5rem;
+  font-family: 'OswaldBold';
+  font-weight: bold;
   padding: 0;
   margin: 0;
   color: ${(props) => props.theme.color ?? 'black'};

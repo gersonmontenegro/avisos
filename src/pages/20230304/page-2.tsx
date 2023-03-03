@@ -30,7 +30,7 @@ const Page2Component = (): JSX.Element => {
         <TodayContainer color={colors.pink2}>¡Hoy!</TodayContainer>
         <TitleText>Día especial del Ministerio de la Mujer</TitleText>
         <FrameContainer>
-          <SubTitleText>¡También habrá programa por la tarde!</SubTitleText>
+          <SubTitleText>¡También habrá programa por la tarde! A las 17:30</SubTitleText>
         </FrameContainer>
       </SideTextContainer>
     );
