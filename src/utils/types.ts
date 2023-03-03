@@ -7,6 +7,7 @@ export enum Keys {
 }
 export interface Colors {
   pink: string;
+  pink2: string;
   white: string;
   black: string;
   lightgreen: string;

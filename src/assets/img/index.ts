@@ -8,5 +8,22 @@ import FelizSabado from './feliz-sabado.png';
 import Zoom from './zoom.png';
 import YellowLogo from './yellow-logo.png';
 import ReuClub from './reu-club.jpeg';
+import ReuClub5M from './reu-club-5-marzo.jpeg';
+import SemanaOracion from './semana-oracion.jpeg';
+import JA from './ja-logo.jpeg';
 
-export {Familia, Cena, IASD3, LogoNuevo, WomenDay, FelizSabado, CenaHoy, Zoom, YellowLogo, ReuClub};
+export {
+  Familia,
+  Cena,
+  IASD3,
+  LogoNuevo,
+  WomenDay,
+  FelizSabado,
+  CenaHoy,
+  Zoom,
+  YellowLogo,
+  ReuClub,
+  SemanaOracion,
+  ReuClub5M,
+  JA,
+};

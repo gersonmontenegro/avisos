@@ -3,7 +3,7 @@ import {HeaderTitleText} from 'components/css/styled-slides-components';
 
 const HeaderComponent = (): JSX.Element => {
   console.log('HEADER!!!');
-  return <HeaderTitleText>Avisos para hoy, 25 de Febrero</HeaderTitleText>;
+  return <HeaderTitleText>Avisos para hoy, 4 de Marzo</HeaderTitleText>;
 };
 
 export const HeaderTitle = memo(HeaderComponent);

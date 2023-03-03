@@ -100,7 +100,7 @@ export const TodayContainer = styled.div`
   margin: 10px;
   width: 100px;
   height: 100px;
-  background-color: ${colors.white};
+  background-color: ${(props) => props.color ?? colors.white};
   font-weight: bold;
   font-size: 5rem;
   font-family: 'OswaldBold';
