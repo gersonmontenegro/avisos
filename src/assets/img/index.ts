@@ -11,6 +11,8 @@ import ReuClub from './reu-club.jpeg';
 import ReuClub5M from './reu-club-5-marzo.jpeg';
 import SemanaOracion from './semana-oracion.jpeg';
 import JA from './ja-logo.jpeg';
+import Cordoba from './cordoba.jpeg';
+import Hiking from './hiking.png';
 
 export {
   Familia,
@@ -26,4 +28,6 @@ export {
   SemanaOracion,
   ReuClub5M,
   JA,
+  Cordoba,
+  Hiking,
 };

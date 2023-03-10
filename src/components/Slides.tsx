@@ -2,8 +2,7 @@ import React, {memo, useEffect, useRef, useState, type KeyboardEvent} from 'reac
 import ReactFullpage from '@fullpage/react-fullpage';
 import {get, isNull, isUndefined} from 'lodash';
 import {palette20230304, Keys, SECTION_SEL} from '../utils';
-import {Page1, Page2, Page3, Page5} from 'pages/20230304';
-import {Page4} from 'pages/20230304/page-4';
+import {Page1, Page4, Page5, Page6, Page7} from 'pages/20230311';
 
 // NOTE: if using fullpage extensions/plugins put them here and pass it as props.
 
@@ -72,11 +71,11 @@ const SlidesComponent = (): JSX.Element => {
         ref={pageRef}
         render={() => (
           <ReactFullpage.Wrapper>
+            <Page6 />
+            <Page7 />
             <Page1 />
-            <Page2 />
-            <Page3 />
-            <Page5 />
             <Page4 />
+            <Page5 />
           </ReactFullpage.Wrapper>
         )}
       />
