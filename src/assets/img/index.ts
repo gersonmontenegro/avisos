@@ -13,6 +13,8 @@ import SemanaOracion from './semana-oracion.jpeg';
 import JA from './ja-logo.jpeg';
 import Cordoba from './cordoba.jpeg';
 import Hiking from './hiking.png';
+import Senderismo from './senderismo.jpeg';
+import GYD from './globalyouthday.png';
 
 export {
   Familia,
@@ -30,4 +32,6 @@ export {
   JA,
   Cordoba,
   Hiking,
+  Senderismo,
+  GYD,
 };

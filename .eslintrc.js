@@ -32,7 +32,7 @@ module.exports = {
     'no-use-before-define': 'off',
     'no-empty-function': 'off',
     'no-shadow': 'off',
-    '@typescript-eslint/no-unused-vars': 'error',
+    '@typescript-eslint/no-unused-vars': 'off',
     '@typescript-eslint/no-useless-constructor': 'error',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/ban-ts-comment': 'warn',

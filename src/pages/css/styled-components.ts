@@ -36,6 +36,16 @@ export const SubContent = styled.div`
   border: 10px solid ${colors.lightgray};
 `;
 
+export const SubContentVertical = styled.div`
+  display: flex;
+  width: 900px;
+  height: 600px;
+  flex-direction: column;
+  text-align: center;
+  background-color: ${(props) => props.theme.pageBackground ?? colors.white};
+  border: 10px solid ${colors.lightgray};
+`;
+
 export const SideTextContainer = styled.div`
   background-color: transparent;
   width: 500px;
@@ -44,6 +54,18 @@ export const SideTextContainer = styled.div`
   align-items: center;
   overflow: hidden;
   display: flex;
+  flex-direction: column;
+`;
+
+export const SideTextContainerVertical = styled.div`
+  background-color: transparent;
+  width: 900px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  display: flex;
+  padding: 0;
+  margin: 0;
   flex-direction: column;
 `;
 
@@ -60,6 +82,16 @@ export const NormalText = styled.h4`
 
 export const NormalTextBold = styled.h4`
   width: 500px;
+  font-size: 2.5rem;
+  font-family: 'OswaldBold';
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  color: ${(props) => props.theme.color ?? 'black'};
+`;
+
+export const NormalTextBoldVertical = styled.h4`
+  width: 900px;
   font-size: 2.5rem;
   font-family: 'OswaldBold';
   font-weight: bold;
