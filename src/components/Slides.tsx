@@ -1,15 +1,15 @@
 import React, {memo, useEffect, useRef, useState, type KeyboardEvent} from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
 import {get, isNull, isUndefined} from 'lodash';
-import {palette20230218, Keys, SECTION_SEL} from '../utils';
-import {Page1, Page2, Page3, Page4} from 'pages/20230225';
+import {palette20230304, Keys, SECTION_SEL} from '../utils';
+import {Page0, Page1, Page2, Page4, Page6, Page7} from 'pages/20230318';
 
 // NOTE: if using fullpage extensions/plugins put them here and pass it as props.
 
 const SlidesComponent = (): JSX.Element => {
   const [isFullscreen, setIsFullscreen] = useState<boolean>(false);
   const pageRef = useRef(null);
-  const [sectionsColor] = useState([...palette20230218]);
+  const [sectionsColor] = useState([...palette20230304]);
 
   const onLeave = (origin: any, destination: any, direction: any): void => {
     // console.log('onLeave', {origin, destination, direction});
@@ -64,16 +64,18 @@ const SlidesComponent = (): JSX.Element => {
         // fullpage options
         licenseKey={'YOUR_KEY_HERE'} // Get one from https://alvarotrigo.com/fullPage/pricing/
         navigation
-        anchors={['firstPage', 'secondPage', 'thirdPage', 'fourthPage']}
+        anchors={['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixth']}
         sectionSelector={SECTION_SEL}
         onLeave={onLeave}
         sectionsColor={sectionsColor}
         ref={pageRef}
         render={() => (
           <ReactFullpage.Wrapper>
+            <Page0 />
             <Page1 />
+            <Page6 />
+            <Page7 />
             <Page2 />
-            <Page3 />
             <Page4 />
           </ReactFullpage.Wrapper>
         )}
