@@ -16,13 +16,13 @@ const HeaderComponent = (): JSX.Element => {
 
   const getNextSaturdayDate = (): NextSaturdayType => {
     const todayDate = new Date();
-    const monthName = new Intl.DateTimeFormat('es-ES', {month: 'long'}).format(todayDate);
 
     const currentDayOfWeek = todayDate.getDay(); // 0 for Sunday, 1 for Monday, ..., 6 for Saturday
     const daysUntilNextSaturday = (7 - currentDayOfWeek + 6) % 7; // Calculate the number of days until the next Saturday
 
     const nextSaturday = new Date(todayDate);
     nextSaturday.setDate(todayDate.getDate() + daysUntilNextSaturday);
+    const monthName = new Intl.DateTimeFormat('es-ES', {month: 'long'}).format(nextSaturday);
 
     return {
       day: nextSaturday.getDate(),
