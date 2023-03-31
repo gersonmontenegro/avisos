@@ -15,6 +15,8 @@ import Cordoba from './cordoba.jpeg';
 import Hiking from './hiking.png';
 import Senderismo from './senderismo.jpeg';
 import GYD from './globalyouthday.png';
+import Bautizo from './bautizo.png';
+import CountrySideExplo from './countryside_explo.png';
 
 export {
   Familia,
@@ -34,4 +36,6 @@ export {
   Hiking,
   Senderismo,
   GYD,
+  Bautizo,
+  CountrySideExplo,
 };
