@@ -4,6 +4,7 @@ import {type Colors} from './types';
 export const palette20230211 = ['#cdcdcd', '#d56aa0', '#FEFAE0', '#FAEDCD', '#D4A373'];
 export const palette20230218 = ['#FEFAE0', '#cdcdcd', '#FEFAE0', '#FAEDCD', '#D4A373'];
 export const palette20230304 = ['#cdcdcd', '#d56aa0', '#FEFAE0', '#FAEDCD', '#D4A373'];
+export const palette20230408 = ['#cdcdcd', '#D4A373', '#FEFAE0', '#FAEDCD', '#f96f5d'];
 export const primaryPalette = ['#CCD5AE', '#E9EDC9', '#FEFAE0', '#FAEDCD', '#D4A373'];
 export const secondaryPalette = [
   '#FEC5BB',

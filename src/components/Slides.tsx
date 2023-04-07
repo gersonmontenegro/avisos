@@ -1,15 +1,15 @@
 import React, {memo, useEffect, useRef, useState, type KeyboardEvent} from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
 import {get, isNull, isUndefined} from 'lodash';
-import {palette20230304, Keys, SECTION_SEL} from '../utils';
-import {Page0, Page1, Page4, Page6} from 'pages/20230401';
+import {palette20230408, Keys, SECTION_SEL} from '../utils';
+import {Page0, Page1, Page2, Page3, Page4, Page6} from 'pages/20230408';
 
 // NOTE: if using fullpage extensions/plugins put them here and pass it as props.
 
 const SlidesComponent = (): JSX.Element => {
   const [isFullscreen, setIsFullscreen] = useState<boolean>(false);
   const pageRef = useRef(null);
-  const [sectionsColor] = useState([...palette20230304]);
+  const [sectionsColor] = useState([...palette20230408]);
 
   const onLeave = (origin: any, destination: any, direction: any): void => {
     // console.log('onLeave', {origin, destination, direction});
@@ -72,8 +72,20 @@ const SlidesComponent = (): JSX.Element => {
         render={() => (
           <ReactFullpage.Wrapper>
             <Page0 />
-            <Page1 />
+
+            {/* Page6: amanecer con Cristo */}
             <Page6 />
+
+            {/* Page2: campamento de familia */}
+            <Page2 />
+
+            {/* Resurrección */}
+            <Page3 />
+
+            {/* Page1: bautizo */}
+            <Page1 />
+
+            {/* Reunión viernes */}
             <Page4 />
           </ReactFullpage.Wrapper>
         )}

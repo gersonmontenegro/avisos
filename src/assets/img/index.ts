@@ -17,6 +17,9 @@ import Senderismo from './senderismo.jpeg';
 import GYD from './globalyouthday.png';
 import Bautizo from './bautizo.png';
 import CountrySideExplo from './countryside_explo.png';
+import Sunshine from './sunshine.png';
+import FamilyCamping from './family_camping.png';
+import EmptyTomb from './empty.png';
 
 export {
   Familia,
@@ -38,4 +41,7 @@ export {
   GYD,
   Bautizo,
   CountrySideExplo,
+  Sunshine,
+  FamilyCamping,
+  EmptyTomb,
 };
