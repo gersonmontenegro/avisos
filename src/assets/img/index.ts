@@ -20,6 +20,10 @@ import CountrySideExplo from './countryside_explo.png';
 import Sunshine from './sunshine.png';
 import FamilyCamping from './family_camping.png';
 import EmptyTomb from './empty.png';
+import SantaCena from './santa_cena.png';
+import Bible from './bible.png';
+import Vigilia from './vigilia.png';
+import Amanecer from './amanecer.png';
 
 export {
   Familia,
@@ -44,4 +48,8 @@ export {
   Sunshine,
   FamilyCamping,
   EmptyTomb,
+  SantaCena,
+  Bible,
+  Vigilia,
+  Amanecer,
 };
