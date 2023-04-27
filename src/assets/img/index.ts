@@ -24,6 +24,7 @@ import SantaCena from './santa_cena.png';
 import Bible from './bible.png';
 import Vigilia from './vigilia.png';
 import Amanecer from './amanecer.png';
+import Exploradora from './exploradora.png';
 
 export {
   Familia,
@@ -52,4 +53,5 @@ export {
   Bible,
   Vigilia,
   Amanecer,
+  Exploradora,
 };
