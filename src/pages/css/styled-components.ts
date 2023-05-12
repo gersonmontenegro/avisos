@@ -68,6 +68,48 @@ export const ImageContainer = styled.div`
   flex-direction: column;
 `;
 
+export const TitleOverImage = styled.div`
+  position: absolute;
+  top: 30px;
+  color: black;
+  font-size: 4em;
+  font-weight: bold;
+  text-align: center;
+  width: 1300px;
+  font-family: 'OswaldBold';
+  justify-content: center;
+`;
+
+export const TitleOverImageBottom = styled.div`
+  position: absolute;
+  bottom: 230px;
+  color: ${(props) => props.theme.bottomTitle ?? colors.black};
+  font-size: 4em;
+  font-weight: bold;
+  text-align: center;
+  width: ${(props) => props.theme.titleOverBottomWidth ?? ' 1300px'};
+  font-family: 'OswaldBold';
+`;
+
+export const TitleOverImageBottomSide = styled.div`
+  position: absolute;
+  bottom: 70px;
+  color: ${(props) => props.theme.bottomTitle ?? colors.black};
+  font-size: 4em;
+  font-weight: bold;
+  text-align: center;
+  width: ${(props) => props.theme.titleOverBottomWidth ?? ' 1300px'};
+  font-family: 'OswaldBold';
+`;
+
+export const ImageOverImageBottom = styled.div`
+  position: absolute;
+  // width: 500px;
+  justify-content: flex-start;
+  top: 30em;
+  left: -23em;
+`;
+
 export const SideTextContainerVertical = styled.div`
   background-color: transparent;
   width: 900px;
@@ -112,7 +154,7 @@ export const NormalTextBoldVertical = styled.h4`
 `;
 
 export const TitleText = styled.h1`
-  width: 500px;
+  width: 650px;
   font-size: 5rem;
   font-family: 'OswaldBold';
   padding: 0;

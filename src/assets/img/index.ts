@@ -34,6 +34,7 @@ import CadenaOracion from './cadena_oracion.png';
 import ReuClubClean from './reu-club.png';
 import Ensalada from './ensalada.jpeg';
 import Beach from './beach.png';
+import PrHenry from './prhenry.png';
 
 export {
   Familia,
@@ -72,4 +73,5 @@ export {
   ReuClubClean,
   Ensalada,
   Beach,
+  PrHenry,
 };

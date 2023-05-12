@@ -43,6 +43,11 @@
   font-family: 'OswaldBold';
 }
 
+.right-bottom-title {
+  width: 800px;
+  font-size: 3em;
+}
+
 .overlay-short-text-top-left {
   position: absolute;
   left: 1em;
@@ -85,4 +90,8 @@
   background-color: 'white';
   width: 1300px;
   height: 900px;
+}
+
+.image-text-container {
+  flex-direction: row;
 }
