@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'OswaldBold';
+  src: url('fonts/Oswald-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
 .white-background {
   background-color: 'white';
   width: 1000px;
@@ -8,4 +14,75 @@
   background-color: 'gray';
   width: 1000px;
   height: 1000px;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 4em;
+  font-weight: bold;
+  text-align: center;
+  width: 1000px;
+  font-family: 'OswaldBold';
+}
+
+.overlay-short-text {
+  position: absolute;
+  /* top: 50%; */
+  right: 1em;
+  /* transform: translate(-50%, -50%); */
+  color: white;
+  font-size: 4em;
+  font-weight: bold;
+  text-align: center;
+  width: 500px;
+  bottom: .5em;
+  font-family: 'OswaldBold';
+}
+
+.overlay-short-text-top-left {
+  position: absolute;
+  left: 1em;
+  top: .5em;
+  color: black;
+  font-size: 4em;
+  font-weight: bold;
+  text-align: center;
+  width: 600px;
+  font-family: 'OswaldBold';
+}
+
+.regular-text {
+  position: absolute;
+  bottom: 230px;
+  color: black;
+  font-size: 4em;
+  font-weight: bold;
+  text-align: center;
+  width: 1000px;
+  font-family: 'OswaldBold';
+}
+
+
+.regular-text-2 {
+  position: absolute;
+  left: 7em;
+  bottom: 230px;
+  color: black;
+  font-size: 4em;
+  font-weight: bold;
+  text-align: center;
+  width: 1000px;
+  font-family: 'OswaldBold';
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  background-color: 'white';
+  width: 1300px;
+  height: 900px;
 }

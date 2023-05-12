@@ -34,6 +34,8 @@ export const SubContent = styled.div`
   justify-content: center;
   background-color: ${(props) => props.theme.pageBackground ?? colors.white};
   border: 10px solid ${colors.lightgray};
+  width: 1300px;
+  height: 900px;
 `;
 
 export const SubContentVertical = styled.div`
@@ -48,8 +50,17 @@ export const SubContentVertical = styled.div`
 
 export const SideTextContainer = styled.div`
   background-color: transparent;
-  width: 500px;
-  height: 600px;
+  width: 1000px;
+  height: 900px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const ImageContainer = styled.div`
+  background-color: transparent;
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -102,7 +113,7 @@ export const NormalTextBoldVertical = styled.h4`
 
 export const TitleText = styled.h1`
   width: 500px;
-  font-size: 3rem;
+  font-size: 5rem;
   font-family: 'OswaldBold';
   padding: 0;
   margin: 0;
@@ -111,6 +122,14 @@ export const TitleText = styled.h1`
 
 export const SubTitleText = styled.h3`
   font-family: OswaldRegular;
+  font-weight: 300;
+  font-size: 3rem;
+  padding: 0px;
+  margin: 0px;
+`;
+
+export const SubTitleBoldText = styled.h3`
+  font-family: OswaldBold;
   font-weight: 300;
   font-size: 3rem;
   padding: 0px;

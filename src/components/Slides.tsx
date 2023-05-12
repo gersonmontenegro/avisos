@@ -1,15 +1,15 @@
 import React, {memo, useEffect, useRef, useState, type KeyboardEvent} from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
 import {get, isNull, isUndefined} from 'lodash';
-import {palette20230408, Keys, SECTION_SEL} from '../utils';
-import {Page0, Page1, Page2, Page3, Page4, Page6} from 'pages/20230429';
+import {palette20230304, Keys, SECTION_SEL} from '../utils';
+import {Page0, Page1, Page2, Page3, Page4, Page6, Page5, Page7, Page8, Page9} from 'pages/20230506';
 
 // NOTE: if using fullpage extensions/plugins put them here and pass it as props.
 
 const SlidesComponent = (): JSX.Element => {
   const [isFullscreen, setIsFullscreen] = useState<boolean>(false);
   const pageRef = useRef(null);
-  const [sectionsColor] = useState([...palette20230408]);
+  const [sectionsColor] = useState([...palette20230304]);
 
   const onLeave = (origin: any, destination: any, direction: any): void => {
     // console.log('onLeave', {origin, destination, direction});
@@ -73,17 +73,29 @@ const SlidesComponent = (): JSX.Element => {
           <ReactFullpage.Wrapper>
             <Page0 />
 
-            {/* Page2: conferencia bíblica */}
+            {/* Page2: concierto */}
             <Page2 />
 
-            {/* Page6: sanca cena */}
+            {/* Page6: semana de evangelismo */}
             <Page6 />
 
-            {/* Ayuno */}
+            {/* Campamento regional */}
             <Page1 />
 
-            {/* Vigilia */}
+            {/* Cadena de oración */}
             <Page3 />
+
+            {/* Reunión club de exploradores */}
+            <Page5 />
+
+            {/* Ensalada de frutas */}
+            <Page7 />
+
+            {/* Playa */}
+            <Page8 />
+
+            {/* Ayuno */}
+            <Page9 />
 
             {/* Reunión viernes */}
             <Page4 />

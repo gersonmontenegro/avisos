@@ -25,6 +25,15 @@ import Bible from './bible.png';
 import Vigilia from './vigilia.png';
 import Amanecer from './amanecer.png';
 import Exploradora from './exploradora.png';
+import Concert from './concert.png';
+import Evangelismo from './evangelismo.jpeg';
+import Ropes from './ropes.png';
+import JesusBreakingRopes from './jesus_breaking_ropes.jpeg';
+import Campamento from './campamento.webp';
+import CadenaOracion from './cadena_oracion.png';
+import ReuClubClean from './reu-club.png';
+import Ensalada from './ensalada.jpeg';
+import Beach from './beach.png';
 
 export {
   Familia,
@@ -54,4 +63,13 @@ export {
   Vigilia,
   Amanecer,
   Exploradora,
+  Concert,
+  Evangelismo,
+  Ropes,
+  JesusBreakingRopes,
+  Campamento,
+  CadenaOracion,
+  ReuClubClean,
+  Ensalada,
+  Beach,
 };
