@@ -35,6 +35,7 @@ import ReuClubClean from './reu-club.png';
 import Ensalada from './ensalada.jpeg';
 import Beach from './beach.png';
 import PrHenry from './prhenry.png';
+import ComidaSaludable from './ComidaSaludable.jpeg';
 
 export {
   Familia,
@@ -74,4 +75,5 @@ export {
   Ensalada,
   Beach,
   PrHenry,
+  ComidaSaludable,
 };
