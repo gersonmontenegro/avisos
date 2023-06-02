@@ -36,6 +36,8 @@ import Ensalada from './ensalada.jpeg';
 import Beach from './beach.png';
 import PrHenry from './prhenry.png';
 import ComidaSaludable from './ComidaSaludable.jpeg';
+import ParqueLaPaloma from './parquelapaloma.jpeg';
+import DiaDelNino from './diadelnino.png';
 
 export {
   Familia,
@@ -76,4 +78,6 @@ export {
   Beach,
   PrHenry,
   ComidaSaludable,
+  ParqueLaPaloma,
+  DiaDelNino,
 };

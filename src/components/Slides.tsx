@@ -2,7 +2,7 @@ import React, {memo, useEffect, useRef, useState, type KeyboardEvent} from 'reac
 import ReactFullpage from '@fullpage/react-fullpage';
 import {get, isNull, isUndefined} from 'lodash';
 import {palette20230304, Keys, SECTION_SEL} from '../utils';
-import {Page0, Page1, Page2, Page3, Page4, Page6, Page7} from 'pages/20230527';
+import {Page0, Page1, Page2, Page3, Page4, Page6, Page7} from 'pages/20230603';
 
 // NOTE: if using fullpage extensions/plugins put them here and pass it as props.
 
@@ -73,22 +73,19 @@ const SlidesComponent = (): JSX.Element => {
           <ReactFullpage.Wrapper>
             <Page0 />
 
-            {/* gracias por semana de evangelismo */}
+            {/* parque la paloma */}
             <Page7 />
 
-            {/* Page2: concierto */}
+            {/* Page2: día del niño */}
             <Page2 />
 
             {/* Cadena de oración */}
             <Page3 />
 
-            {/* Fuesta baustismal */}
+            {/* Reunión club de exploradores */}
             <Page6 />
 
-            {/* Comida fraternal */}
-            <Page1 />
-
-            {/* Reunión viernes */}
+            {/* Viernes recibimiento Sábado */}
             <Page4 />
           </ReactFullpage.Wrapper>
         )}
